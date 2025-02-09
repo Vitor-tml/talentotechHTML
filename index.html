@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .login-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .icon-placeholder img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="login-container">
+        <div class="icon-placeholder">
+            <img src="https://ead.uepg.br/site/imagens/logo_talento_tech_pr_texto.png" alt="Login Icon">
+        </div>
+        <form>
+            <input type="text" name="username" value="Vitor G. S. Oliveira" readonly>
+            <input type="password" name="password" value="talentotech123" readonly>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
 </body>
 </html>
